@@ -12,7 +12,7 @@ export default function App() {
     <div className="app">
       <Title name={name} />
       <NameLength name={name} />
-      <NameReversed name={name}/>
+      <NameReversed name={name} />
     </div>
   )
 }
