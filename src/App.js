@@ -8,13 +8,19 @@ import './styles.css'
 
 
 export default function App() {
-  const [name] = useState('Nicolas')
+  const [name, setName] = useState('Nicolas')
 
   return (
     <div className="app">
       <Title name={name} />
       <NameLength name={name} />
       <NameReversed name={name} />
+
+      <input
+      type="text"
+      value={name}
+      onChange={(newName) => setName(newName.target.value)}
+      placeholder="Enter a new name" />
     </div>
   )
 }
