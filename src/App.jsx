@@ -12,7 +12,7 @@ function App() {
       <NameLength name={name} />
       <NameReversed name={name} />
     </div>
-  );
+  );d <div className=""></div>
 }
 
 export default App;
