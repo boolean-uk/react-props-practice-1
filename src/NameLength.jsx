@@ -1,7 +1,9 @@
-export default function nameLength(name) {
+function nameLength({nameLength, letterCount}) {
     return (
         <p className="name-length">
-        Did you know that {name.name} is {name.name.length} characters long?!
-      </p>
+            Did you know that {nameLength} is {letterCount} characters long?!
+        </p>
     )
 }
+
+export default nameLength

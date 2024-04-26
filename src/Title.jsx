@@ -1,5 +1,9 @@
-export default function title(name) {
+
+
+export default function title({name}) {
     return (
-        <h1 className="title">Welcome, {name.name}!</h1>
+        <>
+            <h1 className="title">Welcome, {name}!</h1>
+        </>
     )
 }
