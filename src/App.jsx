@@ -1,18 +1,16 @@
 import { useState } from 'react'
-import { reverse } from './helpers'
+import Title from './Title'
+import LenghtName from './NameLength'
+import NameReversed from './NameReversed'
 
 function App() {
   const [name, setName] = useState('Nicolas')
 
   return (
     <div className="app">
-      <h1 className="title">Welcome, {name}!</h1>
-      <p className="name-length">
-        Did you know that {name} is {name.length} characters long?!
-      </p>
-      <p className="name-reversed">
-        Also, {name} backwards is {reverse(name)}
-      </p>
+      <Title name={name}/>
+      <LenghtName name={name} />
+      <NameReversed name={name}/>
     </div>
   )
 }
