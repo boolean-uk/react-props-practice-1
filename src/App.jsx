@@ -1,20 +1,19 @@
-import { useState } from 'react'
-import { reverse } from './helpers'
+import { useState } from "react";
+import NameReversed from "./NameReversed";
+import NameLength from "./NameLength";
+import Title from "./Title";
 
 function App() {
-  const [name, setName] = useState('Nicolas')
+  // eslint-disable-next-line no-unused-vars
+  const [name, setName] = useState("Victor");
 
   return (
     <div className="app">
-      <h1 className="title">Welcome, {name}!</h1>
-      <p className="name-length">
-        Did you know that {name} is {name.length} characters long?!
-      </p>
-      <p className="name-reversed">
-        Also, {name} backwards is {reverse(name)}
-      </p>
+      <Title name={name} />
+      <NameLength name={name} />
+      <NameReversed name={name} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
